@@ -1,0 +1,52 @@
+.header-pretitle {
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #95aac9;
+}
+
+.align-items-center {
+    align-items: center!important;
+}
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px; 
+    padding: 1.5rem;
+}
+.badge-soft-success {
+    color: #00d97e;
+    background-color: #ccf7e5;
+}
+.card {
+    margin-bottom: 1.5rem;
+    border-color: #edf2f9;
+    box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
+}
+.avatar.avatar-4by3 {
+    width: 4rem;
+}
+
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1rem;
+    margin: -24px;
+    margin-top: 2px;
+
+}
+.mb-1, .my-1 {
+    margin-bottom: .1875rem!important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 1rem 1.25rem;
+    background-color: transparent;
+    border: 1px solid #edf2f9;
+}

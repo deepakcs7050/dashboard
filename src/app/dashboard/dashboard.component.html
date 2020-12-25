@@ -1,0 +1,316 @@
+<div class="container">
+  <h6 class="header-pretitle">OVERVIEW</h6>
+  <h3>Dashboard</h3>
+  <hr>
+  <div class="row">
+    <div class="col-12 col-lg-6 col-xl">
+      <div class="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="text-uppercase text-muted mb-2"> Value </h6>
+              <span class="h2 mb-0"> $24,500</span>
+              <span class="badge badge-soft-success mt-n1">+3.5%</span>
+            </div>
+            <div class="col-auto">
+              <i class="fa fa-usd text-muted" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl">
+      <div class="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="text-uppercase text-muted mb-2"> Total hours</h6>
+              <span class="h2 mb-0"> 763.5</span>
+            </div>
+            <div class="col-auto">
+              <i class="fa fa-briefcase text-muted" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl">
+      <div class="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="text-uppercase text-muted mb-2"> Exit %</h6>
+              <span class="h2 mb-0"> 35.5%</span>
+            </div>
+            <div class="col-auto">
+              <i class="fa fa-line-chart text-muted" aria-hidden="true" style="font-size: 31px;color: #2e7be5;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 col-xl">
+      <div class="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="text-uppercase text-muted mb-2">Avg. Time</h6>
+              <span class="h2 mb-0"> 2:37</span>
+            </div>
+            <div class="col-auto">
+              <i class="fa fa-clock-o text-muted" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="row">
+    <div class="col-sm-7 card">
+      <div class="card-heade"> Conversions</div>
+      <hr>
+      <div style="display: block;">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+          [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+        </canvas>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4 card">
+      <div class="card-heade">Traffic Channels</div>
+      <hr>
+      <div style="display: block">
+        <canvas baseChart [data]="doughnutChartDatasets" [chartType]="doughnutChartType" [labels]="doughnutChartLabels"
+          [colors]="doughnutChartColors" [options]="chartOptions">
+        </canvas>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- <div class="row">
+      <div class="col-12 col-lg-6 col-xl">
+        <div class="card">
+          <div class="card-header"> Projects</div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <a href="#" class="avatar avatar-4by3">
+                  <img src="../../assets/1.jpg" alt="..." class="avatar-img rounded">
+                </a>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-xl"></div>
+    </div> -->
+
+  <div class="row">
+    <div class="col-12 col-xl-6">
+      <div class="card card-fill">
+        <div class="card-header">
+
+          <h4 class="card-header-title">
+            Projects
+          </h4>
+          <a href="#" class="small">View all</a>
+        </div>
+        <div class="card-body">
+          <div class="list-group list-group-flush my-n3">
+            <div class="list-group-item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <a href="#" class="avatar avatar-4by3">
+                    <img src="../../assets/1.jpg" width="145%"  alt="..." class="avatar-img rounded">
+                  </a>
+                </div>
+                <div class="col-sm-7">
+                  <h6 class="">
+                    <a href="#">Homepage Redesign</a>
+                  </h6>
+                  <p class="card-text small text-muted">
+                    <time datetime="2018-05-24">Updated 4hr ago</time>
+                  </p>
+
+                </div>
+                <div class="col-sm-2">
+                  <div class="dropdown">
+                    <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fe fe-more-vertical"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#!" class="dropdown-item">
+                        Action
+                      </a>
+                      <a href="#!" class="dropdown-item">
+                        Another action
+                      </a>
+                      <a href="#!" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <a href="#" class="avatar avatar-4by3">
+                    <img src="../../assets/2.jpg" width="145%"  alt="..." class="avatar-img rounded">
+                  </a>
+                </div>
+                <div class="col-sm-7">
+                  <h6 class="">
+                    <a href="#">Travels & Time</a>
+                  </h6>
+                  <p class="card-text small text-muted">
+                    <time datetime="2018-05-24">Updated 4hr ago</time>
+                  </p>
+
+                </div>
+                <div class="col-sm-2">
+                  <div class="dropdown">
+                    <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fe fe-more-vertical"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#!" class="dropdown-item">
+                        Action
+                      </a>
+                      <a href="#!" class="dropdown-item">
+                        Another action
+                      </a>
+                      <a href="#!" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <a href="#" class="avatar avatar-4by3">
+                    <img src="../../assets/3.jpg" width="145%"  alt="..." class="avatar-img rounded">
+                  </a>
+                </div>
+                <div class="col-sm-7">
+                  <h6 class="">
+                    <a href="#">Safari Exploration</a>
+                  </h6>
+                  <p class="card-text small text-muted">
+                    <time datetime="2018-05-24">Updated 4hr ago</time>
+                  </p>
+
+                </div>
+                <div class="col-sm-2">
+                  <div class="dropdown">
+                    <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fe fe-more-vertical"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#!" class="dropdown-item">
+                        Action
+                      </a>
+                      <a href="#!" class="dropdown-item">
+                        Another action
+                      </a>
+                      <a href="#!" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row">
+                <div class="col-sm-3">
+                  <a href="#" class="avatar avatar-4by3">
+                    <img src="../../assets/4.jpg" width="145%"  alt="..." class="avatar-img rounded">
+                  </a>
+                </div>
+                <div class="col-sm-7">
+                  <h6 class="">
+                    <a href="#">Personal Site</a>
+                  </h6>
+                  <p class="card-text small text-muted">
+                    <time datetime="2018-05-24">Updated 4hr ago</time>
+                  </p>
+
+                </div>
+                <div class="col-sm-2">
+                  <div class="dropdown">
+                    <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">
+                      <i class="fe fe-more-vertical"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#!" class="dropdown-item">
+                        Action
+                      </a>
+                      <a href="#!" class="dropdown-item">
+                        Another action
+                      </a>
+                      <a href="#!" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-xl-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-header-title">
+            Sales
+          </h4>
+
+        </div>
+        <div class="card-body">
+          <div class="flex-item">
+            <div style="display: block;">
+            <canvas baseChart width="400" height="300"
+                        [datasets]="lineChartData"
+                        [labels]="lineChartLabels"
+                        [options]="lineChartOptions"
+                        [colors]="lineChartColors"
+                        [legend]="lineChartLegend"
+                        [chartType]="lineChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      
+    </div>
+  </div>
